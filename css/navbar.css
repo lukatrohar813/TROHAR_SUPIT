@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap");
+
+.navbar {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    justify-content: flex-start;
+}
+
+#myModal .modal-body {
+    color: black;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#envelope {
+    color: black;
+}
+
+.form-control {
+    color: black;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.navbar a {
+    float: left;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.black {
+    background-color: #000;
+}
+
+.nav-link {
+    margin-right: 1rem;
+}
+
+.nav-link__text {
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.navbar-nav > a:hover,
+.active {
+    color: gold;
+}
+
+/* Styles for Font Awesome icons */
+.fa {
+    padding-right: 5px;
+    color: gold;
+}
+
+.login-col {
+    color: rgb(50, 187, 233);
+}
+
+@keyframes bounceInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#oN_links {
+    margin-left: auto;
+    animation: bounceInRight 1s;
+    position: absolute;
+    right: 0;
+}
+
+#oN_links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#oN_links ul li {
+    margin-left: 15px;
+}
+
+#oN_links ul li:last-child {
+    margin-right: 0;
+}
+
+#oN_links ul li a {
+    color: orange;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#oN_links ul li a:hover {
+    color: yellow;
+}
+
+@media (max-width: 768px) {
+    #oN_links .nav-link {
+      font-size: 14px;
+      padding: 0.5rem;
+    }
+  
+    #oN_links {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }

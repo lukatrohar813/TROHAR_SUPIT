@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.formBtn {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.formBtn:hover {
+    opacity: 0.8;
+}
+
+.container {
+    margin: 10% auto; 
+    padding: 0 20%; 
+}
+
+.container form {
+    margin: auto;
+    width: 30%; 
+}
+
+.container h2 {
+    text-align: center;
+    padding: 0 0 20px;
+}
+
+span.psw {
+    display: block;
+    text-align: center; 
+    padding-top: 16px;
+}
+
+span.psw a {
+    text-decoration: none;
+}
+
+#msg {
+    color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10% 5%; 
+    }
+    
+    .container form {
+        width: 100%; 
+    }
+    
+    .container h2 {
+        font-size: 1rem;
+    }
+}

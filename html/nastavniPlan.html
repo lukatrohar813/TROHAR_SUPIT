@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css" >
+    <link rel="stylesheet" href="/css/nastavniPlan.css" >
+
+    <title>Nastavni Plan</title>
+</head>
+<body>
+    <header>
+        <div id="navbar"></div>
+    </header>
+
+    <div class="nastavniPlan">
+        <h1>Nastavni plan</h1>
+    </div>
+
+    
+        <div class="wrapper">
+            <div class="col">
+                <div class="kolegiji">
+                    <h4 id="nazivKolegija">
+                        <b>Naziv kolegija:</b>
+                    </h4>
+
+                    <input id="pretraga" placeholder="Započnite unos naziva kolegija... " >
+
+                    <div class="prikaz">
+                        <ul id="lista"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <table id="tablica" class="tableStriped tablica">
+                    <tr id="naslovi">
+                        <th>Kolegij</th>
+                        <th>ECTS</th>
+                        <th>Sati</th>
+                        <th>Pred</th>
+                        <th>Vjezbe</th>
+                        <th>Tip</th>
+                        <th>Semestar</th>
+                    </tr>
+
+                    <tr id="ukupno">
+                        <th id="ukupnoTekst">Ukupno</th>
+                        <th id="ects"></th>
+                        <th id="sati"></th>
+                        <th id="predavanja"></th>
+                        <th id="vjezbe"></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+  
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="/js/nastavniPlan.js"></script>
+    <script src="/js/main.js"></script>
+    
+</body>
+</html>

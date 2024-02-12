@@ -1,0 +1,46 @@
+.fancybox {
+  text-align: center;
+
+}
+
+.thumbnails {
+  width: 20%;
+  height: auto;
+  border-radius: 5px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  filter: grayscale(50%);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnails:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  
+}
+
+@media only screen and (max-width: 1300px) {
+  .thumbnails {
+      width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .thumbnails {
+      width: 30%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .thumbnails {
+      width: 35%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .thumbnails {
+      width: 40%;
+  }
+}

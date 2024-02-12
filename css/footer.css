@@ -1,0 +1,34 @@
+.footer {
+  background-image:url(/utilities/images/zaiskri-bg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  z-index:3;
+  width:100%;
+  position:static;
+  bottom:0;
+  left:0
+  }
+  
+  .footerText {
+  text-align:center
+  }
+  
+  .footerText p {
+  margin:0;
+  font-weight:700;
+  font-size:50px
+  }
+  
+  .p1 {
+  color:#fff;
+  text-shadow:1px 1px #000;
+  padding-top:2rem
+  }
+  
+  .p2 {
+    background: linear-gradient(to bottom, #800000, #b90c00);
+    background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+  }

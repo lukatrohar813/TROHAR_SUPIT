@@ -1,0 +1,129 @@
+.novostiGalerija {
+  margin-top: 80px;
+  background: none repeat scroll 0% 0%;
+  background-size: cover;
+  height: 400px;
+  z-index: 3;
+  animation: FadeInTop 1s ease;
+}
+
+.novostiGalerija1 {
+  background-image: url(/utilities/images/novost1.jpg);
+}
+
+.novostiGalerija2 {
+  background-image: url(/utilities/images/novost2.jpg);
+}
+
+.novostiGalerija3 {
+  background-image: url(/utilities/images/novost3.jpg);
+}
+
+.textSlika {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.text {
+  font-weight: bold;
+  font-size: 50px;
+  width: 60%;
+  margin: 60px auto;
+  color: white;
+}
+
+.novostiNaslov {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  animation: FadeInBottom 1s ease;
+}
+
+.novostiNaslov h1 {
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 4px solid gold;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.paragraf {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.paragraf p {
+  margin: auto;
+  width: 50%;
+  text-align: justify;
+  font-size: 20px;
+}
+
+
+video {
+  display: block;
+  margin: auto;
+  width: 42%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* Animation styles for FadeInBottom effect */
+@keyframes FadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation styles for FadeInTop effect */
+@keyframes FadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .novostiGalerija {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .novostiGalerija {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+  .text {
+    font-size: 30px;
+  }
+
+  .paragraf p {
+    width: 80%;
+  }
+}

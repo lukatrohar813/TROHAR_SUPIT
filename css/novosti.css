@@ -1,0 +1,133 @@
+.novosti {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.novosti h1 {
+  font-weight: 600;
+  padding: 20px;
+  border-bottom: 4px solid gold;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.bxSizing {
+  box-sizing: border-box;
+  margin: 100px auto 500px;
+  background-color: #f4f4f491;
+}
+
+/* Animation styles for FadeIn effect */
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Styles for elements with class 'novostiBounce' and 'novostiNAnim' */
+.novostiBounce, .novostiNAnim {
+  animation: FadeIn 1s ease;
+}
+
+.container {
+  margin-top: 2.32rem;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-flow: row wrap;
+  height: 31.25rem;
+}
+
+.circle {
+  border: 15px solid rgb(235, 235, 235);
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  margin: 5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+.circle.novosti1 {
+  background-image: url("/utilities/images/novost1.jpg");
+}
+
+.circle.novosti2 {
+  background-image: url("/utilities/images/novost2.jpg");
+}
+
+.circle.novosti3 {
+  background-image: url("/utilities/images/novost3.jpg");
+}
+
+.slikaButton {
+  text-decoration: none;
+}
+
+.slikaDatum, .slikaText {
+  color: white;
+  text-shadow: 1px 1px black;
+  font-weight: bold;
+}
+
+.slikaDatum {
+  color: gold;
+}
+
+.aligner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.aligner p {
+  font-size: 13px;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    margin-top: 2.55rem;
+    height: 45rem;
+  }
+
+  .circle {
+    margin: 2em;
+  }
+
+  .footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    margin-top: 2.55rem;
+    height: 62rem;
+  }
+
+  .circle {
+    margin: 2em;
+  }
+}

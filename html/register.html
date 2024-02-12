@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="/css/login&register.css" >
+
+    <title>Registracija</title>
+</head>
+<body>
+    <header>
+        <div id="navbar"></div>
+    </header>
+
+    <main class="container">
+        <h2>REGISTRACIJA KORISNIKA</h2>
+
+        <form id="registrationForm" method="post">
+            <label for="username"><b>Korisnicko ime</b></label>
+            <input type="email" id="username" placeholder="Korisnicko ime" name="username" required >
+
+            <label for="psw"><b>Lozinka</b></label>
+            <input type="password" id="psw" placeholder="Lozinka" name="psw" required >
+
+            <button type="submit" id="registerBtn" class="formBtn">Registriraj se</button>
+            <p id="msg"></p>
+        </form>
+    </main>
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

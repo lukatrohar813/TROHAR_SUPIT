@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.videoContainer {
+    margin: 0;
+    padding: 0;
+}
+
+.videoContainer video {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.txtBox {
+    color: white;
+    text-align: left;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pocetnaText, .customColor {
+    font-size: 4rem;
+    filter: drop-shadow(2px 2px 1px black);
+}
+
+.customColor {
+    background: linear-gradient(to bottom, #800000, #b90c00);
+    background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+}
+
+
+.textboxOnVideo {
+    font-size: 60px;
+}
+
+@media (min-width: 600px) {
+    #typedString {
+        margin-top: 30px;
+    }
+
+    .textboxOnVideo {
+        font-size: 100px;
+    }
+}
